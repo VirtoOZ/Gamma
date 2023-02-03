@@ -1,0 +1,129 @@
+@import "_nullstyle";
+
+.body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.conteiner {
+	//ограничвает ширину контентной части
+	min-width: 100%; //делаем ширину контентной части в весь экран
+	margin: 0px auto; //центрируем контент по середине
+}
+
+.wrapper {
+	//оболочка
+	//   max-height: 100%; //оболочка занимает всю высоту экрана
+	//   overflow: hidden; //предотвращает выход контента за рамки экрана
+	//   display: flex; //делаем оболочку флексом контейнером
+	//   flex-direction: column; //Меняем направление основной оси
+	//   justify-content: space-between; //раскидываем элементы по вертикальной оси
+}
+
+//Шапка
+.header {}
+
+.logotype {
+	//для того чтобы вырвать картинку из ее места нужно указать родителя 
+	position: relative;
+	//для центровки изображения по горизонтали 
+	display: flex;
+	//раскидываем
+	justify-content: center;
+}
+
+.logotype__img {
+	//даем картинке расшириться во весь блок logotype
+	min-height: 100%;
+	//отрываем картинку с ее места 
+	position: absolute;
+	padding: 1% 0;
+}
+
+.logotype__column {}
+
+.logotype__line-1 {
+	height: 50px;
+	background-color: #e3051c;
+}
+
+.logotype__line-2 {
+	height: 50px;
+	background-color: #e83227;
+}
+
+.logotype__line-3 {
+	height: 50px;
+	background-color: #e8401b;
+}
+
+
+.content {}
+
+//====МЕНЮШКА====
+.menu {}
+
+.menu__column {
+	text-align: center;
+
+}
+
+.menu__name {
+	padding: 5px 0px 5px 0px;
+	text-transform: uppercase;
+	font-size: 20px;
+	background-color: #ec6607;
+	color: #fff;
+}
+
+.menu__month {
+	padding: 5px 0px 5px 0px;
+	background-color: #f07d00;
+	color: #fff;
+	font-size: 20px;
+}
+
+//===============
+
+//====СЛАЙДЕР====
+.slider {}
+
+.slider__column {}
+
+.slider__name {
+	font-size: 20px;
+	padding: 20px 0px 0px 20px;
+	height: 60px;
+	color: #fff;
+	background-color: #575757;
+}
+
+.slider__img {
+	background-size: 100% auto;
+	// background-position: center;
+}
+
+.slider__link {
+	background-color: #949494;
+}
+
+//===============
+
+
+//=====КАРТОЧКА ТОВАРА=====
+.item-card {}
+
+.item-card__column {}
+
+.item-card__name {
+	background-color: #adadad;
+}
+
+.item-card__img {}
+
+.item-card__text {}
+
+.item-card__button {
+	background-color: #fff;
+}
+
+//===============
